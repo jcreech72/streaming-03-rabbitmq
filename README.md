@@ -17,6 +17,7 @@ Get started with RabbitMQ, a message broker, that enables multiple processes to 
 
 1. Read the [RabbitMQ Tutorial - Hello, World!](https://www.rabbitmq.com/tutorials/tutorial-one-python.html)
 1. Read the code and comments in this repo.
+    -->I tried recreating that code and running, but ran into errors regarding the declaration of "channel" 
 
 ## Execute about,py
 
@@ -37,9 +38,10 @@ Once it runs and finishes, we can reuse the terminal.
 1. Read v1_listen_for_messages.py (and the tutorial)
 1. Run the file.
 
-You'll need to fix an error in the program to get it to run.
-Once it runs successfully, will it terminate on its own? How do you know? 
-As long as the process is running, we cannot use this terminal for other commands. 
+You'll need to fix an error in the program to get it to run. --> Yes had to fix the spelling of localhost.
+Once it runs successfully, will it terminate on its own? How do you know?  --> I thought it had termined on it's own because it printed 'Hellow World!'; however, there was no close to the program in the code. When ctrl+c was pressed, then saw a message "interrupted" which indicated it was now completed due to manual intervention.
+
+As long as the process is running, we cannot use this terminal for other commands. --> Correct - would need to open another terminal to feed additional information to the same queue. 
 
 ## Version 1 - Open a New Terminal / Emit More Messages
 
@@ -52,12 +54,12 @@ As long as the process is running, we cannot use this terminal for other command
 
 ## Version 1: Don't Repeat Yourself (DRY)
 
-1. Did you notice you had to change the message in two places?
+1. Did you notice you had to change the message in two places? --> Yes
     1. You update the actual message sent. 
-    1. You also update what is displayed to the user. 
+    1. You also update what is displayed to the user. --> Hello Earth, Hello Mars, Hello Jupiter were the three messages.
 1. Fix this by introducting a variable to hold the message. 
-    1. Use your variable when sending. 
-    1. Use the variable again when displaying to the user. 
+    1. Use your variable when sending.  --> created a variable called message and called it when declaring the body within the channel and when printing the message.
+    1. Use the variable again when displaying to the user. --> used the variable in the print message
 
 To send a new message, you'll only make one change.
 Updating and improving code is called 'refactoring'. 
@@ -69,23 +71,23 @@ Now look at the second version of each file.
 These include more graceful error handling,
 and a consistent, reusable approach to building code.
 
-Each of the version 2 programs include an error as well. 
+Each of the version 2 programs include an error as well. --> fixed lllocalhost - but ran it first to read the error code that was generated. The v2_listen code also has a mispelled word, and ran it to find the error which is also a mispelling of localhost. 
 
-1. Find the error and fix it. 
-1. Compare the structure of the version 2 files. 
-1. Modify the docstrings on all your files.
-1. Include your name and the date.
-1. Imports always go at the top, just after the file docstring.
-1. Imports should be one per line - why?
-1. Then, define your functions.
+1. Find the error and fix it. --> fixed spelling of localhost
+1. Compare the structure of the version 2 files.  --> also uses variables. Defined functions and used the try, except two times with a finally block to close the connection.
+1. Modify the docstrings on all your files. -->done
+1. Include your name and the date. -->done
+1. Imports always go at the top, just after the file docstring. --> fixed this on the v1_listen file
+1. Imports should be one per line - why? --> not recommended so it is more easily read and understood
+1. Then, define your functions. -->blocks of code that can be reused to define variables and send messages
 1. Functions are reuable logic blocks.
 1. Everything the function needs comes in through the arguments.
 1. A function may - or may not - return a value. 
 1. When we open a connection, we should close the connection. 
-1. Which of the 4 files will always close() the connection?
-1. Search GitHub for if __name__ == "__main__":
-1. How many hits did you get? 
-1. Learn and understand this common Python idiom.
+1. Which of the 4 files will always close() the connection? -->The sender (emit) closes the connection. The listener remains open until Ctrl+C is entered by user.
+1. Search GitHub for if __name__ == "__main__": 
+1. How many hits did you get? --> >15 Million
+1. Learn and understand this common Python idiom. -->Found an article here: https://github.com/abhisheku1/C-Python/blob/f0a680007f345a46bcd187b952a929c7068c1da8/Doc/library/__main__.rst#id3
 
 ## Reference
 
