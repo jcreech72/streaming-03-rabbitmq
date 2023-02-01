@@ -95,5 +95,9 @@ Each of the version 2 programs include an error as well. --> fixed lllocalhost -
 - [Using Python environments in VS Code](https://code.visualstudio.com/docs/python/environments)
 
 ## Multiple Terminals
+Screenshot 2023-01-31 193851 v2_exercise.jpg
 
-![Mac Example](screenshot.png)
+Also ran through additional send.py/receive.py exercises and the v1 terminal
+Screenshot 2023-01-31 193431 v1_exercise.jpg
+Screenshot 2023-01-31 193217.jpg
+
