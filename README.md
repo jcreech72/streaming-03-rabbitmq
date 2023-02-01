@@ -95,9 +95,13 @@ Each of the version 2 programs include an error as well. --> fixed lllocalhost -
 - [Using Python environments in VS Code](https://code.visualstudio.com/docs/python/environments)
 
 ## Multiple Terminals
-Screenshot 2023-01-31 193851 v2_exercise.jpg
+https://github.com/jcreech72/streaming-03-rabbitmq/blob/main/Screenshot%202023-01-31%20193851%20v2_exercise.jpg
+
+
 
 Also ran through additional send.py/receive.py exercises and the v1 terminal
-Screenshot 2023-01-31 193431 v1_exercise.jpg
-Screenshot 2023-01-31 193217.jpg
+https://github.com/jcreech72/streaming-03-rabbitmq/blob/main/Screenshot%202023-01-31%20193431%20v1_exercise.jpg
+
+https://github.com/jcreech72/streaming-03-rabbitmq/blob/main/Screenshot%202023-01-31%20193217.jpg
+
 
